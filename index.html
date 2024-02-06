@@ -9,49 +9,67 @@
 
     <title>Social links profile</title>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <main>
-      <div class="main container">
-        <div class="container text-center">
-          <div class="infobox">
-            <div class="name"><h2>The Hormonicers</h2></div>
+      <div class="container container-main">
+        <div class="row justify-content-center">
+          <!-- <div class="col-10 col-xl-3 col-xxl-3 infobox"> -->
+          <div class="col-10 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4 infobox">
+            <div class="band-banner">
+              <img src="assets/images/band-banner.jpg" id="band-banner" alt="band-banner" />
+            </div>
+            <div class="name visually-hidden"><h1>The Hormonicers</h1></div>
+            <div class="band-picture">
+              <img src="assets/images/band-pic.jpeg" id="band-picture" alt="band-picture" />
+            </div>
             <div class="location">Rosenheim, Bavaria</div>
-            <!-- TODO Add a good description -->
-            <div class="description">"We play Indie-Rock"</div>
+            <div class="description">"We write and play music that sounds something like Alternative-Indie-Rock"</div>
+
+            <!-- Social Links -->
             <div class="social-links">
               <!-- Instagram -->
-              <a href="https://www.instagram.com/the_hormonicers/" target="_blank" alt="instagram"
-                ><span>Instagram</span></a
-              >
+              <div class="button-container">
+                <a href="https://www.instagram.com/the_hormonicers/" id="instagram" target="_blank" alt="instagram">
+                  <button type="button" class="btn btn-secondary">Instagram</button></a
+                >
+              </div>
+
+              <!-- Soundcloud -->
+              <div class="button-container">
+                <a href="https://soundcloud.com/the-hormonicers" id="soundcloud" target="_blank" alt="soundcloud"
+                  ><button type="button" class="btn btn-secondary">Soundcloud</button></a
+                >
+              </div>
 
               <!-- Spotify -->
-              <div class="container">
+              <div class="button-container">
                 <a
                   href="https://open.spotify.com/intl-de/artist/5QjmCG1UosrbgzgzPyG6Tt?si=2ItQgbRhQ72jdKhbHA7nYQ"
+                  id="spotify"
                   target="_blank"
                   alt="spotify"
-                  ><span>Spotify</span></a
+                  ><button type="button" class="btn btn-secondary">Spotify</button></a
                 >
               </div>
 
               <!-- Apple Music -->
-              <div class="container">
-                <a href="https://music.apple.com/us/artist/the-hormonicers/1722614999" target="_blank" alt="apple music"
-                  ><span>Apple Music</span></a
+              <div class="button-container">
+                <a
+                  href="https://music.apple.com/us/artist/the-hormonicers/1722614999"
+                  id="apple-music"
+                  target="_blank"
+                  alt="apple music"
+                  ><button type="button" class="btn btn-secondary">Apple Music</button></a
                 >
               </div>
 
               <!-- Tidal -->
-              <div class="container">
-                <a href="https://tidal.com/artist/44633757" target="_blank" alt="tidal"><span>Tidal</span></a>
-              </div>
-              <!-- Soundcloud -->
-              <div class="container">
-                <a href="https://soundcloud.com/the-hormonicers" target="_blank" alt="soundcloud"
-                  ><span>Soundcloud</span></a
+              <div class="button-container">
+                <a href="https://tidal.com/artist/44633757" id="tidal" target="_blank" alt="tidal"
+                  ><button type="button" class="btn btn-secondary">Tidal</button></a
                 >
               </div>
             </div>
@@ -59,11 +77,11 @@
         </div>
       </div>
 
-      <div class="attribution">
+      <!-- <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
         <a href="#">Mirko Müller</a>.
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
