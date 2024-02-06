@@ -20,8 +20,17 @@ body {
   font-size: 14px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .infobox {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 100%;
   background-color: hsl(0, 0%, 20%);
   border-radius: 15px;
